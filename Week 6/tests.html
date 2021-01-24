@@ -1,0 +1,21 @@
+<!DOCTYPE html> <!--Mocha and Chai Test-->
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/mocha/mocha.css"> <!--Want the style sheet-->
+</head>
+<body>
+	<div id="mocha"><p><a href=".">Card Game</a></p></div>
+	<div id="messages"></div>
+	<div id="fixtures"></div>
+	<script src="node_modules/mocha/mocha.js"></script> <!--Mocha library-->
+	<script src="node_modules/chai/chai.js"></script> <!--Chai library; this will get us the assertions-->
+	<script src="script.js"></script> <!--the JS file-->
+	<script>
+	mocha.setup('bdd');
+	</script> <!--use the behavior driven assertion style-->
+	<script src="index_test.js"></script> <!--the file which will contain the test; this line of code has to come after chai or it will not work-->
+	<script>
+	mocha.run();
+	</script>
+</body>
+</html>
