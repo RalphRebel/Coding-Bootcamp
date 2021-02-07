@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--too close to the header-->
+    <style>
+        section{
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    Create a new website using HTML and Bootstrap. The website must include the following:
+        A Bootstrap navbar
+        A Bootstrap styled table
+        A Bootstrap styled form
+        At least 2 pages
+        Bootstrap grid used throughout to format elements
+        Elements should stack vertically when the window is small
+    -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">My 2nd Bootstrap page</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="./Index.html">Page 1 <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./index2.html">Page 2</a>
+                    </li>               
+                </ul>            
+                </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"> <!--Equal length-->
+                    <div class="row">
+                        <div class="col-md-6" id="table-content">
+                            <h2>Course Information</h2>
+                            <p>My Courses:</p>            
+                            <table class="table table-dark table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Week</th>
+                                    <th>Rating</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Biology</td>
+                                    <td>Week 1 - 6</td>
+                                    <td>Tough</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>Week 7 - 12</td>
+                                    <td>Complex</td>
+                                </tr>
+                                <tr>
+                                    <td>Code</td>
+                                    <td>Week 13 - 18</td>
+                                    <td>Coming Soon!</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6" id="form-content">
+                            <h2>Sign-Up for information</h2>
+                            <form>
+                                <div class="form-group">
+                                  <label>First Name</label>
+                                  <input type="text" class="form-control" placeholder="Enter your first name here">
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your last name here">
+                                </div>
+                                <div class="form-group">
+                                    <label>Subject</label>
+                                    <input type="text" class="form-control" placeholder="Enter the subject you wish to learn">
+                                </div>
+                                <div class="form-group">
+                                    <label>Additional Information</label>
+                                    <input type="text" class="form-control" placeholder="Enter additional information here">
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn btn-info">Submit</button> <!--info submit button-->
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
